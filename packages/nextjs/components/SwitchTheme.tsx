@@ -32,6 +32,7 @@ export const SwitchTheme = ({ className }: { className?: string }) => {
         className="toggle toggle-primary bg-primary hover:bg-primary border-primary"
         onChange={handleToggle}
         checked={isDarkMode}
+        style={{ display: "none" }}
       />
       <label htmlFor="theme-toggle" className={`swap swap-rotate ${!isDarkMode ? "swap-active" : ""}`}>
         <SunIcon className="swap-on h-5 w-5" />

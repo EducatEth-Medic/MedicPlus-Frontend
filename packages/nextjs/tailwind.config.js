@@ -8,18 +8,35 @@ module.exports = {
     themes: [
       {
         light: {
-          primary: "#93BBFB",
-          "primary-content": "#212638",
-          secondary: "#DAE8FF",
+          // ...require("daisyui/src/theming/themes")["lemonade"],
+
+          // primary: "#93BBFB",
+          // primary: "#419400",
+          primary: "#205D4F",
+          
+          // "primary-content": "#212638",
+          "primary-content": "#fafafa",
+          
+          // secondary: "#DAE8FF",
+          secondary: "#d1dec8",
+          
           "secondary-content": "#212638",
           accent: "#93BBFB",
           "accent-content": "#212638",
           neutral: "#212638",
           "neutral-content": "#ffffff",
           "base-100": "#ffffff",
-          "base-200": "#f4f8ff",
+
+
+          // "base-200": "#f4f8ff",
+          "base-200": "#f5f5f5",
+
+
           "base-300": "#DAE8FF",
+
           "base-content": "#212638",
+          
+
           info: "#93BBFB",
           success: "#34EEB6",
           warning: "#FFCF72",
@@ -32,16 +49,31 @@ module.exports = {
       },
       {
         dark: {
-          primary: "#212638",
+          // ...require("daisyui/src/theming/themes")["synthwave"],
+
+          // primary: "#212638",
+          // primary: "#419400",
+          primary: "#205D4F",
+
           "primary-content": "#F9FBFF",
-          secondary: "#323f61",
+          // secondary: "#323f61",
+          secondary: "#d1dec8",
+
           "secondary-content": "#F9FBFF",
+          // "secondary-content": "#212638",
+          
           accent: "#4969A6",
           "accent-content": "#F9FBFF",
           neutral: "#F9FBFF",
           "neutral-content": "#385183",
-          "base-100": "#385183",
-          "base-200": "#2A3655",
+          
+          // "base-100": "#385183",
+          "base-100": "#575859",
+
+
+          // "base-200": "#2A3655",
+          "base-200": "#3a3a3a",
+          
           "base-300": "#212638",
           "base-content": "#F9FBFF",
           info: "#385183",
