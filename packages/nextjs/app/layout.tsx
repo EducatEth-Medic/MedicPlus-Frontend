@@ -9,7 +9,7 @@ export const metadata = getMetadata({ title: "Medic+", description: "Built with 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   return (
     <html suppressHydrationWarning>
-      <body>
+      <body className="bg-gradient-to-r from-[#c2e5f5] to-[#defede]">
         <ThemeProvider enableSystem>
           <div className="flex min-h-screen">
             <div className="flex-1">

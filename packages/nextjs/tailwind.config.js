@@ -10,7 +10,9 @@ module.exports = {
         light: {
           primary: "#0fa3a0",  // Verde principal
           "primary-content": "#fafafa",  // Color de texto en tema claro
-          secondary: "#77a155",  // Verde intermedio
+          // secondary: "#77a155",  // Verde intermedio
+          secondary: "#0fa3a0",
+
           "secondary-content": "#212638",
           accent: "#93BBFB",
           "accent-content": "#212638",
@@ -34,7 +36,8 @@ module.exports = {
         dark: {
           primary: "#0fa3a0",  // Verde principal en tema oscuro
           "primary-content": "#F9FBFF",  // Texto claro en modo oscuro
-          secondary: "#77a155",  // Verde intermedio en modo oscuro
+          // secondary: "#77a155",  // Verde intermedio en modo oscuro
+          secondary: "#0fa3a0",
           "secondary-content": "#F9FBFF",  // Texto claro en modo oscuro
           accent: "#4969A6",
           "accent-content": "#F9FBFF",

@@ -48,7 +48,7 @@ export const Header = () => {
   );
 
   // Obtener solo la parte final de la URL (la página actual)
-  const currentPage = pathname.split('/').pop()?.replace(/-/g, ' ') || "Home";
+  const currentPage = pathname.split("/").pop()?.replace(/-/g, " ") || "Home";
 
   return (
     <div className="sticky top-0 navbar bg-transparent h-[100px] flex-shrink-0 justify-between z-20 w-full px-4 sm:px-6">
@@ -61,7 +61,10 @@ export const Header = () => {
 
       {/* Contenedor del Logo centrado */}
       <div className="navbar-center flex items-center justify-center w-full max-w-screen-sm mx-auto">
-        <div className="relative h-[42.97px] flex justify-center items-center rounded-full border-2 border-[#0fa3a0] bg-white px-4">
+        <div
+          className={`relative h-[42.97px] flex justify-center items-center rounded-full border-2 border-[#0fa3a0] px-4 
+                      ${resolvedTheme === "dark" ? "bg-gray-800" : "bg-white"}`}
+        >
           <Image
             alt="Medic+ logo"
             className="cursor-pointer"
