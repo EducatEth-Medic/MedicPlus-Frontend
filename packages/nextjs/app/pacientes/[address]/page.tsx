@@ -49,7 +49,7 @@ export default function PacientePage() {
         </p>
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-        <CaseDocuments caseId="5" />
+        <CaseDocuments caseId="1" patientAddress={address} />
       </div>
     </div>
   );
