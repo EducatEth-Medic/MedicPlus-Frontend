@@ -12,8 +12,8 @@ export async function GET(req: Request, { params }: { params: { address: string 
   const walletData = {
     balance: "2.5", // Ejemplo de balance en ETH
     transactions: [
-      { txHash: "0x123", from: address, to: "0x8757c7D953ea058baCDF82717Caf403Bd01F1099" },
-      { txHash: "0x456", from: "0x8757c7D953ea058baCDF82717Caf403Bd01F1099", to: address },
+      { txHash: "0x123", from: address, to: "0xe8BbB6b0F1e29e87AD82Fb9577001c7C3Be50790" },
+      { txHash: "0x456", from: "0xe8BbB6b0F1e29e87AD82Fb9577001c7C3Be50790", to: address },
     ],
     name: "Juan Perez",
     age: 30,

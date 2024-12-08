@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import { CaseDocuments } from "~~/components/contract-components/CaseDocuments";
 
 export default function PacientePage() {
   const { address } = useParams(); // Usamos useParams para obtener el parámetro dinámico 'address' desde la URL
@@ -48,7 +49,7 @@ export default function PacientePage() {
         </p>
       </div>
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-        
+        <CaseDocuments caseId="5" />
       </div>
     </div>
   );
