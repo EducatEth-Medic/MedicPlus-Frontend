@@ -55,7 +55,7 @@ export const Header = () => {
       {/* Cápsula con el nombre de la página actual */}
       <div className="navbar-start flex items-center">
         <div className="h-[42.97px] flex items-center justify-center bg-[#0fa3a0] text-white rounded-full px-6 py-2">
-          <span className="text-sm">{currentPage}</span>
+          <span className="text-sm">{currentPage.toUpperCase()}</span>
         </div>
       </div>
 

@@ -1,3 +1,9 @@
+import { DetailsContainer } from "~~/components/DetailsContainer";
+
 export default function CitasPage() {
-    return <p>Citas Page</p>
+  return (
+    <DetailsContainer>
+      <p>Citas Page</p>
+    </DetailsContainer>
+  );
 }
