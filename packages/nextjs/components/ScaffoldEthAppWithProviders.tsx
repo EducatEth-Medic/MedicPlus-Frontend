@@ -9,10 +9,10 @@ import { Toaster } from "react-hot-toast";
 import { WagmiProvider } from "wagmi";
 import { Footer } from "~~/components/Footer";
 import { Header } from "~~/components/Header";
+import Sidebar from "~~/components/Sidebar";
 import { BlockieAvatar } from "~~/components/scaffold-eth";
 import { useInitializeNativeCurrencyPrice } from "~~/hooks/scaffold-eth";
 import { wagmiConfig } from "~~/services/web3/wagmiConfig";
-import Sidebar from "~~/components/Sidebar";
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
   useInitializeNativeCurrencyPrice();
@@ -22,8 +22,12 @@ const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
       <div className={`flex flex-col min-h-screen `}>
         <Header />
         <main className="relative flex flex-col flex-1">
-          <Sidebar />
-          {children}
+          <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
+            <div className="w-full flex-none md:w-32">
+              <Sidebar />
+            </div>
+            <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}</div>
+          </div>
         </main>
         {/* <Footer /> */}
       </div>
