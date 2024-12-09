@@ -1,80 +1,86 @@
-# 🏗 Scaffold-ETH 2
 
-<h4 align="center">
-  <a href="https://docs.scaffoldeth.io">Documentation</a> |
-  <a href="https://scaffoldeth.io">Website</a>
-</h4>
+# Medic+
 
-🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
+**Medic+** es una solución descentralizada diseñada para transformar la gestión y el control de los historiales médicos personales. Basada en tecnología blockchain, garantiza la privacidad y seguridad de los datos, otorgando a los pacientes el control total sobre quién puede acceder a su información y en qué momento.
 
-⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
+Con **Medic+**, compartir datos médicos de forma cómoda y segura se convierte en una realidad, permitiendo a los pacientes acceder a todas las posibilidades que ofrece la telemedicina y la prevención avanzada. Esto incluye la facilidad de obtener segundas opiniones o realizar estudios preventivos con cualquier clínica o especialista, tanto de manera presencial como online.
 
-- ✅ **Contract Hot Reload**: Your frontend auto-adapts to your smart contract as you edit it.
-- 🪝 **[Custom hooks](https://docs.scaffoldeth.io/hooks/)**: Collection of React hooks wrapper around [wagmi](https://wagmi.sh/) to simplify interactions with smart contracts with typescript autocompletion.
-- 🧱 [**Components**](https://docs.scaffoldeth.io/components/): Collection of common web3 components to quickly build your frontend.
-- 🔥 **Burner Wallet & Local Faucet**: Quickly test your application with a burner wallet and local faucet.
-- 🔐 **Integration with Wallet Providers**: Connect to different wallet providers and interact with the Ethereum network.
+Además, **Medic+** integra un innovador asistente de inteligencia artificial capaz de traducir diagnósticos médicos en términos claros y comprensibles. Este asistente también sugiere estudios adicionales o cambios en los hábitos de vida basados en normativas internacionales, como las guías de la Organización Mundial de la Salud (OMS). Todo esto se realiza con un enfoque en la privacidad del usuario y un análisis avanzado de sus datos médicos.
 
-![Debug Contracts tab](https://github.com/scaffold-eth/scaffold-eth-2/assets/55535804/b237af0c-5027-4849-a5c1-2e31495cccb1)
+**Medic+** no solo empodera a los pacientes, sino que también establece un nuevo estándar en la gestión de información médica al combinar seguridad, accesibilidad e innovación tecnológica.
 
-## Requirements
+### Tecnologías Utilizadas
 
-Before you begin, you need to install the following tools:
+Este proyecto utiliza las siguientes tecnologías:
+- 🏗 **Scaffold-ETH 2**: Plantilla de proyecto que nos permite crear aplicaciones web3 escalables y seguras de forma rápida y sencilla.
+- **TypeScript**: Lenguaje de programación fuertemente tipado y compilado que nos permite escribir código más seguro y escalable.
+- **Next.js**: Framework de React que nos permite crear aplicaciones web escalables y de alta performance.
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **Tailwind CSS**: Framework de CSS que nos permite escribir estilos personalizados de forma rápida y sencilla.
+- **Ethers.js**: Biblioteca de JavaScript que nos permite interactuar con la blockchain de Ethereum.
+- **Wagmi**: Biblioteca de React que nos permite interactuar con la blockchain de Ethereum de forma sencilla y escalable.
 
-- [Node (>= v18.18)](https://nodejs.org/en/download/)
-- Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
-- [Git](https://git-scm.com/downloads)
+### Algunas pantallas del proyecto
+- **Usuario sin accesos mientras no conecte su wallet**: 
+![Wallet no conectada](Wallet-No-Conectada.jpeg)
 
-## Quickstart
+- **Usuario sin accesos mientras no conecte su wallet**: 
+![Accesos habilitados](Wallet-Conectada.jpeg)
 
-To get started with Scaffold-ETH 2, follow the steps below:
+- **Visualización de informe medico**: 
+![Web Module (Scaffold-ETH)](./res/Web-Module-(Scaffold-ETH).jpeg)
 
-1. Install dependencies if it was skipped in CLI:
+### Cómo Contribuir
 
+A continuación, te indicamos cómo puedes colaborar clonando el repositorio y apoyando con código.
+
+#### Clonar el Repositorio
+
+Para clonar el repositorio, ejecuta el siguiente comando en tu terminal:
+
+```bash
+git clone https://github.com/EducatEth-Medic/MedicPlus-Frontend
+cd MedicPlus-Frontend
 ```
-cd my-dapp-example
+
+#### Configuración del Entorno
+
+Antes de ejecutar el proyecto, asegúrate de tener las siguientes herramientas instaladas en tu entorno:
+
+- Node.js (versión 14 o superior)
+- Yarn (opcional, pero recomendado)
+
+Instala las dependencias del proyecto con el siguiente comando:
+
+```bash
 yarn install
 ```
 
-2. Run a local network in the first terminal:
+#### Ejecutar el Proyecto
 
-```
-yarn chain
-```
+Para ejecutar el proyecto en modo de desarrollo, utiliza el siguiente comando:
 
-This command starts a local Ethereum network using Hardhat. The network runs on your local machine and can be used for testing and development. You can customize the network configuration in `packages/hardhat/hardhat.config.ts`.
-
-3. On a second terminal, deploy the test contract:
-
-```
-yarn deploy
-```
-
-This command deploys a test smart contract to the local network. The contract is located in `packages/hardhat/contracts` and can be modified to suit your needs. The `yarn deploy` command uses the deploy script located in `packages/hardhat/deploy` to deploy the contract to the network. You can also customize the deploy script.
-
-4. On a third terminal, start your NextJS app:
-
-```
+```bash
 yarn start
 ```
 
-Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
+Esto iniciará un servidor local en `http://localhost:3000` donde podrás ver el proyecto en funcionamiento.
 
-Run smart contract test with `yarn hardhat:test`
+#### Propuestas de Cambio
 
-- Edit your smart contracts in `packages/hardhat/contracts`
-- Edit your frontend homepage at `packages/nextjs/app/page.tsx`. For guidance on [routing](https://nextjs.org/docs/app/building-your-application/routing/defining-routes) and configuring [pages/layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts) checkout the Next.js documentation.
-- Edit your deployment scripts in `packages/hardhat/deploy`
+1. **Fork** el repositorio y crea una nueva rama para tu funcionalidad o corrección de errores.
+2. Realiza tus cambios y asegúrate de que el proyecto siga funcionando correctamente.
+3. Haz un **commit** de tus cambios y empuja la rama a tu repositorio.
+4. Envía un **pull request** al repositorio principal describiendo los cambios realizados.
 
+#### Buenas Prácticas
 
-## Documentation
+- Asegúrate de que el código sigue el estilo y las convenciones del proyecto.
+- Escribe pruebas para tus cambios si es aplicable.
+- Intenta mantener tus cambios enfocados y bien documentados.
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
+#### Contacto
 
-To know more about its features, check out our [website](https://scaffoldeth.io).
+Si tienes alguna pregunta o necesitas ayuda, no dudes en abrir un issue o contactar con nosotros a través del correo soporte@medicplus.com.
 
-## Contributing to Scaffold-ETH 2
-
-We welcome contributions to Scaffold-ETH 2!
-
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+¡Esperamos tus contribuciones!
