@@ -78,9 +78,3 @@ Esto iniciará un servidor local en `http://localhost:3000` donde podrás ver el
 - Asegúrate de que el código sigue el estilo y las convenciones del proyecto.
 - Escribe pruebas para tus cambios si es aplicable.
 - Intenta mantener tus cambios enfocados y bien documentados.
-
-#### Contacto
-
-Si tienes alguna pregunta o necesitas ayuda, no dudes en abrir un issue o contactar con nosotros a través del correo soporte@medicplus.com.
-
-¡Esperamos tus contribuciones!
