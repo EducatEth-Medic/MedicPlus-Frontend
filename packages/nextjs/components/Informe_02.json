@@ -1,0 +1,199 @@
+{
+    "resourceType": "Patient",
+    "id": "0x8757c7D953ea058baCDF82717Caf403Bd01F1099",
+    "identifier": [
+      {
+        "use": "official",
+        "system": "http://hospital.org/patient-id",
+        "value": "123456"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Pérez",
+        "given": ["Juan"]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1985-06-15"
+  }
+  
+  {
+    "resourceType": "Condition",
+    "id": "condition-456",
+    "patient": {
+      "reference": "Patient/patient-123"
+    },
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "confirmed",
+          "display": "Confirmed"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "problem-list-item",
+            "display": "Problem List Item"
+          }
+        ]
+      }
+    ],
+    "severity": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-severity",
+          "code": "moderate",
+          "display": "Moderate"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code": "426856004",
+          "display": "Cardiac arrhythmia"
+        }
+      ]
+    },
+    "onsetDateTime": "2024-11-01",
+    "recordedDate": "2024-12-07"
+  }
+  
+  {
+    "resourceType": "Encounter",
+    "id": "encounter-321-second-opinion",
+    "status": "finished",
+    "class": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "Ambulatory"
+        }
+      ]
+    },
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/encounter-type",
+            "code": "34108",
+            "display": "Second Opinion"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/patient-123"
+    },
+    "participant": [
+      {
+        "individual": {
+          "reference": "Practitioner/doctor-123"
+        }
+      }
+    ],
+    "period": {
+      "start": "2024-12-07T10:00:00Z",
+      "end": "2024-12-07T11:00:00Z"
+    },
+    "reasonCode": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/encounter-diagnosis",
+            "code": "426856004",
+            "display": "Cardiac arrhythmia"
+          }
+        ]
+      }
+    ],
+    "diagnosis": [
+      {
+        "condition": {
+          "reference": "Condition/condition-456"
+        }
+      }
+    ],
+    "notes": [
+      {
+        "text": "Aunque el diagnóstico de arritmia cardiaca moderada es consistente, sugiero un enfoque más agresivo en el tratamiento. Considerar la administración de un **antiarrítmico** como la **amiodarona** para controlar la arritmia a corto plazo. En lugar de un control exclusivo con betabloqueantes, la estrategia farmacológica debe incluir un enfoque combinatorio. Además, recomiendo un **monitoreo holter** de 24 horas para evaluar la variabilidad de la frecuencia cardíaca y la presencia de arritmias paroxísticas. Es fundamental descartar la presencia de alguna cardiopatía estructural subyacente, por lo que sugiero realizar una **resonancia magnética cardíaca (RMN)** para obtener una visión más detallada de la estructura del corazón."
+      }
+    ]
+  }
+  
+  {
+    "resourceType": "Observation",
+    "id": "obs-789-second-opinion",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "vital-signs",
+            "display": "Vital Signs"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "29463-7",
+          "display": "Heart rate"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/patient-123"
+    },
+    "valueQuantity": {
+      "value": 90,
+      "unit": "beats/min",
+      "system": "http://unitsofmeasure.org",
+      "code": "beats/min"
+    },
+    "effectiveDateTime": "2024-12-07T10:30:00Z"
+  }
+  
+  {
+    "resourceType": "Procedure",
+    "id": "procedure-555-second-opinion",
+    "status": "completed",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "40702003",
+          "display": "Electrocardiogram"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/patient-123"
+    },
+    "performedDateTime": "2024-12-07T10:15:00Z",
+    "performer": {
+      "reference": "Practitioner/doctor-123"
+    }
+  }
+  
