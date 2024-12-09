@@ -28,7 +28,7 @@ Este proyecto utiliza las siguientes tecnologías:
 ![Accesos habilitados](Wallet-Conectada.jpeg)
 
 - **Visualización de informe medico**: 
-![Web Module (Scaffold-ETH)](./res/Web-Module-(Scaffold-ETH).jpeg)
+![Web Module (Scaffold-ETH)](Web-Module-(Scaffold-ETH).jpeg)
 
 ### Cómo Contribuir
 
